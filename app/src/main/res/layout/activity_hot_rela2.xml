@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_hot_rela2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xiaowai.cartoonpro.activity.HotRelaActivity">
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/hot_rela_tz_image"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+        <Button
+            android:background="@mipmap/ic_collection_pre_normal"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tz_rela_btnreturn" />
+
+        <Button
+            android:layout_margin="10dp"
+            android:background="@drawable/comic_rela_tz_rela_btnfollow_selector"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tz_rela_btnfollow" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="49dp"
+            android:id="@+id/tz_rela_tv_title" />
+
+        <TextView
+            android:layout_marginTop="210dp"
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tz_rela_btntype1" />
+
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/tz_rela_bottom_rela"
+            >
+                <TextView
+                    android:id="@+id/tz_rela_bottom_rela_tv"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/tz_rela_bottom_rela_isbegin"
+                    android:background="@color/colorYellow"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tz_tab"
+            android:layout_width="match_parent"
+            android:layout_below="@id/hot_rela_tz_image"
+            android:layout_height="40dp">
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tz_tab"
+            android:layout_above="@id/tz_rela_bottom_rela"
+            android:id="@+id/tz_vp"
+            ></android.support.v4.view.ViewPager>
+    </RelativeLayout>
+

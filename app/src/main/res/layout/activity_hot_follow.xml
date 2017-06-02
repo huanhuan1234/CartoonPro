@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hot_follow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow"
+    tools:context="com.example.xiaowai.cartoonpro.activity.HotFollowActivity">
+
+    <Button
+        android:layout_margin="10dp"
+        android:background="@drawable/hot_follow_return_selector"
+        android:id="@+id/hot_follow_return"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="忘记密码"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_login_visible"
+        android:layout_marginTop="60dp"
+        android:id="@+id/imageView2"
+        android:layout_below="@id/hot_follow_return"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:background="@color/colorWhite"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="支持中国大陆"
+        android:ems="10"
+        android:layout_below="@id/imageView2"
+        android:drawableStart="@drawable/ic_login_phone_selector"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editphone" />
+
+    <View
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ediview"
+        android:layout_below="@id/editphone"
+        android:layout_width="200dp"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGray"
+        ></View>
+    <EditText
+        android:background="@color/colorWhite"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="8-30位数字或英文"
+        android:ems="10"
+        android:drawableStart="@drawable/ic_login_pwd_selector"
+        android:layout_below="@id/ediview"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edipwd" />
+
+    <TextView
+        android:id="@+id/textError"
+        android:textColor="@color/coloRed"
+        android:layout_below="@id/edipwd"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textColor="@color/colorWhite"
+        android:text="登录"
+        android:background="@color/coloLogin"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnlogin"
+        android:layout_below="@id/textError"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/textRegister"
+        android:textColor="@color/colorZc"
+        android:layout_below="@id/btnlogin"
+        android:layout_centerHorizontal="true"
+        android:text="立即注册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/loginOtherTypes"
+        android:textColor="@color/colorGray"
+        android:layout_below="@id/textRegister"
+        android:layout_centerHorizontal="true"
+        android:text="--  其它方式登录 --"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rg_logintypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbqq"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/login_qq_selector"
+            />
+        <RadioButton
+            android:id="@+id/rbweibo"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/login_weibo_selector"
+            />
+        <RadioButton
+            android:id="@+id/rbweixin"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@drawable/login_weixin_selector"
+            />
+    </RadioGroup>
+</RelativeLayout>

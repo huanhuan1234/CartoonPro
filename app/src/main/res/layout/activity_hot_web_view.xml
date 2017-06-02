@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hot_web_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xiaowai.cartoonpro.activity.HotWebViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/hot_webview_title_rela"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <Button
+            android:background="@mipmap/ic_collection_pre_pressed"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/button4" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView8" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button4"
+            android:layout_toEndOf="@+id/button4" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/hot_webview_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></RelativeLayout>
+
+    <WebView
+        android:layout_above="@id/hot_webview_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hot_webview_title_rela"
+        android:id="@+id/hot_webview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

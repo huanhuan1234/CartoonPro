@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/head_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_me_item_follow"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nick_text"
+            android:text="昵称"
+            android:layout_toEndOf="@+id/head_image"
+            android:layout_marginStart="22dp" />
+        <ImageView
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/follow_image"
+            android:src="@mipmap/ic_topic_detail_subscribe_button_pressed"
+            android:layout_marginEnd="26dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/content_text"
+        android:text="聊天内容"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/image_content"
+        android:layout_height="wrap_content"
+       />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_commom_num_vhot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:text="评论"
+            android:textSize="15sp"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/common_detail_normal_vhot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@id/text_commom_num_vhot"
+            android:src="@mipmap/ic_common_detail_normal" />
+
+        <TextView
+            android:id="@+id/text_pra_num_vhot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@id/common_detail_normal_vhot"
+            android:text="点赞"
+            android:textSize="15sp"
+            android:focusable="true"/>
+
+        <ImageView
+            android:id="@+id/ic_common_praise_normal_vhot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@id/text_pra_num_vhot"
+            android:src="@mipmap/ic_common_praise_normal"
+            android:focusable="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

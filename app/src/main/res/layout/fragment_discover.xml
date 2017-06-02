@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/rela_title_discover"
+        android:id="@+id/rela_title_discover"
+        ></include>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rgsex"
+        >
+        <RadioButton
+            android:focusable="false"
+            android:text="男生版"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/found_change_boy"
+            android:id="@+id/rbboy" />
+        <RadioButton
+            android:focusable="false"
+            android:visibility="gone"
+            android:text="女生版"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/found_change_girl"
+            android:id="@+id/rbgirl" />
+    </RadioGroup>
+
+</RelativeLayout>

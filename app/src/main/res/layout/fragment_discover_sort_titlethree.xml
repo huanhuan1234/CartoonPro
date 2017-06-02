@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/discover_sort_title_rgthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/discover_sort_title_rbadvice"
+            style="@style/discoverSortTitleThree"
+            android:text="推荐"
+            android:checked="true"
+             />
+        <RadioButton
+            android:id="@+id/discover_sort_title_rbhot"
+            style="@style/discoverSortTitleThree"
+            android:text="最火热"
+            />
+        <RadioButton
+            android:id="@+id/discover_sort_title_rblastest"
+            style="@style/discoverSortTitleThree"
+            android:text="新上架"
+            />
+    </RadioGroup>
+</RelativeLayout>
